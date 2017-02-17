@@ -30,6 +30,15 @@
             border:1px solid #DDD;
             margin:10px;
         }
+        input{
+            width: 100%;
+            line-height: 30px;
+            margin: 10px;
+        }
+        textarea{
+            width: 100%;
+            margin: 10px;
+        }
 
 
     </style>
@@ -98,6 +107,31 @@
             </ul>
         </p>
 
+        <h3 id="score"> 学习成绩 </h3>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th> 科目 </th>
+                    <th> 成绩 </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 语文 </td>
+                    <td> 90 </td>
+                </tr>
+                <tr>
+                    <td> 数学 </td>
+                    <td> 95 </td>
+                </tr>
+                <tr>
+                    <td> 英语 </td>
+                    <td> 93 </td>
+                </tr>
+            </tbody>
+        </table>
+
         <h3 id="fav">兴趣爱好 </h3>
 
         <p>
@@ -117,6 +151,21 @@
             </ul>
         </p>
 
+        <h3>给我留言</h3>
+        <form action="http://zuoyuan.blog.ustc.edu.cn/wp-comments-post.php" method="post">
+            <div>
+                <input name="author" placeholder="你的名字" />
+            </div>
+            <div>
+                <input type="email" name="email" placeholder="你的email" />
+            </div>
+            <div>
+                <textarea name="comment" placeholder="你的留言" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="评论"/>
+            </div>
+        </form>
 
 
     </section>
